@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DA>
+  <DetectionAreas>2</DetectionAreas>
+  <DetectArea>
+    <Point>0,0</Point>
+    <Point>1280,0</Point>
+    <Point>1280,720</Point>
+    <Point>0,720</Point>
+  </DetectArea>
+  <Loitering>
+    <Point>220,130</Point>
+    <Point>800,140</Point>
+    <Point>700,465</Point>
+    <Point>220,365</Point>
+    <Point>220,130</Point>
+  </Loitering>
+</DA>

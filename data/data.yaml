@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['bag', 'fall', 'fire', 'person', 'smoke', 'trash', 'violence']
+
+roboflow:
+  workspace: garoong
+  project: intelligence-cctv
+  version: 13
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/garoong/intelligence-cctv/dataset/13

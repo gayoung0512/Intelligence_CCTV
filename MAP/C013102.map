@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DA>
+	<DetectionAreas>2</DetectionAreas>
+	<DetectArea>
+		<Point>1280,60</Point>
+		<Point>280,100</Point>
+		<Point>4,140</Point>
+		<Point>4,705</Point>
+		<Point>1280,707</Point>
+	</DetectArea>
+	<Intrusion>
+		<Point>1280,81</Point>
+		<Point>782,85</Point>
+		<Point>312,119</Point>
+		<Point>96,302</Point>
+		<Point>910,544</Point>
+		<Point>1280,555</Point>
+	</Intrusion>
+</DA>

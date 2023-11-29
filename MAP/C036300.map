@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DA>
+  <DetectionAreas>1</DetectionAreas>
+  <DetectArea>
+    <Point>400,115</Point>
+    <Point>921,115</Point>
+    <Point>921,360</Point>
+    <Point>400,360</Point>
+    <Point>400,115</Point>
+  </DetectArea>
+  <Queueing>
+    <Point>400,115</Point>
+    <Point>921,115</Point>
+    <Point>921,360</Point>
+    <Point>400,360</Point>
+    <Point>400,115</Point>
+  </Queueing>
+</DA>

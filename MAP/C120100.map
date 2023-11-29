@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DA>
+  <DetectionAreas>3</DetectionAreas>
+  <DetectArea>
+    <Point>0,0</Point>
+    <Point>1280,0</Point>
+    <Point>1280,720</Point>
+    <Point>0,720</Point>
+    <Point>0,0</Point>
+  </DetectArea>
+  <PeopleCountingA>
+    <Point>4,4</Point>
+    <Point>4,300</Point>
+    <Point>1276,350</Point>
+    <Point>1276,4</Point>
+    <Point>4,4</Point>
+  </PeopleCountingA>
+  <PeopleCountingB>
+    <Point>4,310</Point>
+    <Point>4,716</Point>
+    <Point>1276,716</Point>
+    <Point>1276,360</Point>
+    <Point>4,310</Point>
+  </PeopleCountingB>
+</DA>
