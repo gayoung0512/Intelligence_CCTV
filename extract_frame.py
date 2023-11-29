@@ -8,7 +8,7 @@ def process_all_folders(base_folder):
     print(subfolders)
     # Loop through each subfolder
     for subfolder in subfolders:
-        input_folder = os.path.join(base_folder, subfolder, "mp4")
+        input_folder = os.path.join(base_folder, subfolder,"mp4")
         output_folder = os.path.join(base_folder, subfolder, "jpg")
         print(input_folder)
         # Call the extract_frames_from_folder function for each subfolder
@@ -52,7 +52,7 @@ def extract_frames_from_folder(input_folder, output_folder):
 
             if not ret:
                 break
-            if frame_count>=start_frame and frame_count<=end_frame and frame_count%fps==0:
+            if frame_count>=start_frame and frame_count<=end_frame and frame_count % round(fps / 2) == 0:
                 # Save the frame as an image if it's within the frame interval
                 frame_path = os.path.join(video_output_folder, f"[{os.path.splitext(video_file)[0]}]_{frame_count:04d}.jpg")
                 cv2.imwrite(frame_path, frame)
@@ -68,7 +68,7 @@ def extract_time_from_xml(xml_file):
     # Parse the xml file
     tree = ET.parse(xml_file)
     root = tree.getroot()
-    alpha=10
+    alpha=15
 
     # Extract start_time and end_time from the xml file (replace with your actual XML structure)
     start_time = root.find('.//StartTime').text
@@ -77,7 +77,7 @@ def extract_time_from_xml(xml_file):
     alarm_duration = root.find('.//AlarmDuration').text
     alarm_duration=convert_time(alarm_duration)
     end_time=start_time+alarm_duration
-    return start_time-alpha, end_time
+    return start_time-alpha, end_time +alpha
 
 def convert_time(time_str):
     time_obj = datetime.strptime(time_str, "%H:%M:%S")

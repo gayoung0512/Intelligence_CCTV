@@ -15,9 +15,12 @@ test:  # test images (optional)
 
 # Classes
 names:
-  0: person
-  1: bag
-  2: fire
+  0: fall
+  1: fire
+  2: object
+  3: person
+  4: smoke
+  5: violence
  
 
 
